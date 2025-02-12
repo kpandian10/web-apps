@@ -1,0 +1,13 @@
+Company
+
+<% companies = Company.all%>
+
+<p>No of companies: <%= companies.count%>
+
+<ul>
+
+  <% for company in companies %>
+    <li><%=company["name"]%>
+  <%end%>
+
+<ul>
